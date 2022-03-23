@@ -1,7 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import GameController from './utils/GameController';
 
 function App() {
+  
+  const gameController = new GameController();
+  gameController.createGameBoard();
+
   return (
     <div className="App">
       <header className="App-header">
